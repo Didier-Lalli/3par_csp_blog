@@ -7,10 +7,7 @@ Before we go any further, lets scope this guide and detail who this guide is for
 This guide assumes that you are comfortable working on the command-line. Much of the work done to manage Kubernetes clusters is done at the command line using `kubectl` commands and heavy file manipulation with `vim` or `nano`.
 
 ## Getting Started
-This guide starts with an existing Kubernetes cluster. This can be a fresh install with `kubeadm` or kubespray. The deployment of Kubernetes is outside of the scope of this document. If you don't have a cluster up and running, I recommend that you get started there.
-
-    - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
-    - [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
+This guide starts with an existing Kubernetes cluster. This can be a fresh install with [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) or [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/). The deployment of Kubernetes is outside of the scope of this document. If you don't have a cluster up and running, I recommend that you get started there.
 
 ### Configuring kubectl
 
