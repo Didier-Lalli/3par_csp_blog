@@ -4,7 +4,7 @@
 
 Before we go any further, lets scope this guide and detail who this guide is for and what are the requirements to get started so you can follow along. This guide is geared to a Kubernetes admin who needs to configure the cluster for Persistent Storage using an HPE Primera or 3PAR array. We will cover some basics in the beginning on how to setup and configure `kubectl` to communicate with the cluster after which we will deploy the HPE CSI Driver for Kubernetes and the HPE 3PAR and Primera Container Storage Provider. We will also validate the installation with several examples and highlight some troubleshooting tips in case you run into any issues. 
 
-This guide assumes that you are comfortable working on the command-line. Much of the work done to manage Kubernetes clusters is done at the command line like issuing `kubectl` commands and heavy file manipulation with `vim` or `nano`.
+This guide assumes that you are comfortable working on the command-line. Much of the work done to manage Kubernetes clusters is done at the command line using `kubectl` commands and heavy file manipulation with `vim` or `nano`.
 
 ## Getting Started
 This guide starts with an existing Kubernetes cluster. This can be a fresh install with `kubeadm` or kubespray. The deployment of Kubernetes is outside of the scope of this document. If you don't have a cluster up and running, I recommend that you get started there.
