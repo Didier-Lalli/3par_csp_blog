@@ -126,7 +126,7 @@ parameters:
   accessProtocol: fc
 ```
 
-Create a `PersistentVolumeClaim` for mariaDB for use by Wordpress. This object creates a `PersistentVolume` as defined, make sure to reference the correct `.spec.storageClassName`.
+Create a `PersistentVolumeClaim` for MariaDB for use by Wordpress. This object creates a `PersistentVolume` as defined, make sure to reference the correct `.spec.storageClassName`.
 
 ```markdown
 ---
@@ -189,7 +189,7 @@ Deploy Wordpress by setting `persistence.existingClaim=<existing_PVC>` to the `P
 helm install my-wordpress bitnami/wordpress --version 9.2.1 --set service.type=ClusterIP,wordpressUsername=admin,wordpressPassword=adminpassword,mariadb.mariadbRootPassword=secretpassword,persistence.existingClaim=my-wordpress,allowEmptyPassword=false
 ```
 
-Check to verify that Wordpress and mariaDB were deployed and are in **Running** state. This may take a few minutes.
+Check to verify that Wordpress and MariaDB were deployed and are in the **Running** state. This may take a few minutes.
 
 ```
 kubectl get pods
@@ -198,12 +198,14 @@ my-wordpress-69b7976c85-9mfjv   1/1       Running   0          2m
 my-wordpress-mariadb-0          1/1       Running   0          2m
 ```
 
-Finally lets take a look at the Wordpress site. You can use `kubectl port-forward` to access the Wordpress application from within the Kubernetes cluster and verify everything is working correctly.
+Finally lets take a look at the Wordpress site. You can use `kubectl port-forward` to access the Wordpress application from within the Kubernetes cluster to verify everything is working correctly.
+
 ```
 kubectl port-forward svc/my-wordpress 80:80
 Forwarding from 127.0.0.1:80 -> 8080
 Forwarding from [::1]:80 -> 8080
 ```
+
 > **NOTE:**<br />If you have something already running locally on port 80, modify the port-forward to an unused port (i.e. 5000:80).
 
 Open a browser on your workstation to **http://127.0.0.1** and you should see, **"Hello World!"**. Access the admin console at: **http://127.0.0.1/admin** using the user/password used to deploy the Helm Chart. Happy Blogging!
