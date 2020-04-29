@@ -2,7 +2,7 @@
 
 [TOC]
 
-With the release of the HPE CSI Driver for Kubernetes back in January, HPE has been hard at work on integrating additional platforms into the CSI driver framework. Initially the HPE CSI Driver for Kubernetes only supported Nimble Storage now with the latest v1.1.1 comes support for HPE Primera and 3PAR arrays. In this tutorial, I will walk you through the steps of deploying the CSI driver with HPE Primera then I will deploy a Wordpress site using persistent storage. Let's get going.
+With the release of the HPE CSI Driver for Kubernetes back in January, HPE has been hard at work on integrating additional platforms into the CSI driver framework. Initially the HPE CSI Driver for Kubernetes only supported Nimble Storage now with the latest v1.1.1 comes support for HPE Primera and 3PAR arrays. In this tutorial, I will walk you through the steps of deploying the CSI driver with HPE Primera and then we will deploy a Wordpress site using persistent storage. With that, let's get going!
 
 ## Assumptions
 I will be starting with an existing Kubernetes cluster. This can be a fresh install with [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) or [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/). The deployment of Kubernetes is outside of the scope of this document. If you don't have a cluster up and running, I recommend that you get started there.
