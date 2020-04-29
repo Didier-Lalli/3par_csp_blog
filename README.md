@@ -52,8 +52,8 @@ The next steps of configuring `kubectl` is configuring the **.kube/config** file
 To do this, start by logging into one of your master nodes and switch to root:
 
 ```
-[~]# ssh k8s-admin@kube-master
-[~]# sudo su -
+ssh k8s-admin@kube-master
+sudo su -
 ```
 
 We need to copy the contents from the .kube/config to our local machine. Make sure to get the entire file starting at `apiVersion` to the end.
