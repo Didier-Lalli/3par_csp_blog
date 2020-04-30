@@ -1,7 +1,5 @@
 # Tutorial: How to get started with the HPE CSI Driver and HPE Primera and 3PAR
 
-[TOC]
-
 With the release of the HPE CSI Driver for Kubernetes back in January, HPE has been hard at work on integrating additional platforms into the CSI driver framework. Initially the HPE CSI Driver for Kubernetes only supported Nimble Storage now with the latest v1.1.1 comes support for HPE Primera and 3PAR arrays. In this tutorial, I will walk you through the steps of deploying the CSI driver with HPE Primera and then we will deploy a Wordpress site using persistent storage. With that, let's get going!
 
 ## Assumptions
